@@ -1,0 +1,82 @@
+footer {
+    background:linear-gradient(45deg, #104c64,#aa0707 ) ;
+}
+
+footer .row {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+footer .col {
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+footer .email-id {
+    
+    border-bottom: 1px solid white;
+
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer form {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10%;
+}
+
+footer form i {
+    font-size: 18px;
+    margin-right: 2%;
+    color: #fff;
+}
+
+footer form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+
+footer form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+footer .socials i {
+    font-size: 1.8rem;
+    width: 12%;
+    height: 7%;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.5rem;
+    margin-right: 1%;
+    cursor: pointer;
+}
+
+hr {
+    width: 100%;
+
+}
+
+.copy {
+    text-align: center;
+    color: #fff;
+}
