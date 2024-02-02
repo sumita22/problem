@@ -1,0 +1,62 @@
+<div class="row">
+  <div class="col ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="nav">
+      <a class="navbar-brand fw-bold mb-3 " href="#">SHORT LIST</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <form class="form-inline my-2 my-lg-0 ">
+          <input (input)="filterdetails($event)"
+            class="form-control me-2 shadow-lg p-3 mb-2 bg-body rounded ml-5 w-100 " type="search" placeholder="Search"
+            aria-label="Search" id="searchBar">
+
+        </form>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ml-auto p-2">
+          <li class="nav-item">
+            <a href="#" class="text-dark ">
+              <h2><i class="bi bi-sliders text-primary "></i></h2>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-dark ">
+              <h2><i class="bi bi-bell-fill "></i></h2>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="text-dark ">
+              <h2><i class="bi bi-box-arrow-right text-secondary "></i></h2>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
+<!------------------------------------------------------------------------>
+                                  <!-- content -->
+<!------------------------------------------------------------------------>
+<div>
+  <div class="row bg-light p-5 ">
+    <div class="col-12 bg-white w-100 border ml-0">
+      <div class="row  bg-white p-2  flex-column-3 flex-lg-row" id="innerCol">
+        <div class="col-4 con  text-center text-dark p-4" *ngFor="let e of shortListed">
+
+          <img [src]="e.image">
+          <h6>{{e.name}}</h6>
+          <h6>{{e.qualification}}</h6>
+          <h6>{{e.year}}Years</h6>
+          <h6>{{e.place}}</h6>
+          <button type="button" class="btn btn-info mx-5 bo" id="button">view</button>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+</div>
