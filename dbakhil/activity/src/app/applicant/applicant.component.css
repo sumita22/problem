@@ -1,0 +1,40 @@
+h1{
+    color: lightcoral;
+}
+.container{
+    border-radius: 25px;
+    background-color: #eceaea;
+    margin-top: auto;
+    margin: auto;
+    text-align: center;
+    padding: 5%;
+    width: 50vw;
+    height: 35vh;
+    box-shadow: 0 14px 28px rgb(0, 0, 0, 0.25),
+    0 10px 10px rgba(0, 0, 0, 0.22);
+}
+input{
+    padding-inline-start: 3%;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    height: 10%;
+    width: 50%;
+    background: #fff;
+    
+}
+.btn1{
+    font-size: 1em;
+    background-color: chocolate;
+    color: white;
+    height: 5vh;
+    width: 20%;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+}
+.btn1:hover{
+    border: 1px solid chocolate;
+    color: chocolate;
+    background-color: #fff;
+}

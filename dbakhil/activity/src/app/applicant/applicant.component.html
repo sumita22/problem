@@ -1,0 +1,13 @@
+<div class="container text-center">
+    <h1>{{applicantName}}</h1>
+    <p>
+        <button [disabled]="jobsAvailable">Apply now</button>
+    </p>
+    <input [(ngModel)]="name" placeholder="Enter your name">
+    <p>
+        <button class="btn1" (click)="onSubmitApplication()">submit</button>
+    </p> 
+<p>You entered: {{ name }}</p>
+</div>
+    
+ 
