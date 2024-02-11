@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+
+</head>
+
+<body>
+
+    <!-- Image -->
+
+    <div class="div">
+        <app-filter [all]="getAllBooks()" [free]="getFreeBooks()" [premium]="getPremiumBooks()"
+            (onSelected)="selected($event)">
+
+        </app-filter>
+    </div>
+    <div class="row">
+        <div class="col-3" *ngFor="let item of filteredDetails;">
+            <div class="card-info">
+                <div class="cards" style="background-image: url({{item.bgimg}})">
+                </div>
+                <!-- <img class="" [src]="item.image" alt="Description of the image"> -->
+                <div class="info text-center">
+                    <h1>{{item.id}}</h1>
+                    <h4>{{item.name}}</h4>
+                    <h6>{{item.author}}</h6>
+                    <button class="btn btn-primary">More Details</button>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+
+
+    <!-- Button -->
+
+
+
+
+</body>
+
+</html>
