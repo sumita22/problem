@@ -1,0 +1,18 @@
+.head span{
+    color: rgb(26, 143, 232);
+}
+.parent{
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+.kid{
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+.logo img{
+    border-radius: 50%;
+}

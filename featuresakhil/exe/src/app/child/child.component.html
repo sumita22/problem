@@ -1,0 +1,117 @@
+<div class="row">
+    <div *ngIf="cselectedJob" class="col-12">
+        <div class="container">
+            <div class="backdrop col-12 pt-2">
+                <img [src]="cselectedJob.backdrop" alt="">
+            </div>
+            <div class="logo col-12">
+                <img [src]="cselectedJob.logo" alt="" height="50px" width="50px">
+            </div>
+            <div class="col-12 d-flex">
+                <div class="col-6 text-center">
+                    <p>{{ cselectedJob.applicants }}</p>
+                </div>
+                <div class="col-6 text-center">
+                    <p>{{ cselectedJob.posted}}</p>
+                </div>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="col-10">
+                    <h2>{{ cselectedJob.jobtitle }}</h2>
+                </div>
+                <div class="bookmark col-2 text-center ml-2 pl-5 pt-2">
+                    <button type="submit" class="bookmark rounded circle">
+                        <img [src]="cselectedJob.bookmark" alt="" height="20px" width="20px">
+                    </button>
+                </div>
+            </div>
+            <div class="col-12 pl-5 text-primary">
+                <p>{{ cselectedJob.location }}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container">
+            <div class="col-12 d-flex">
+                <div class="extra col-6 d-flex">
+                    <div class=" col-6 text-center">
+                        <img [src]="cselectedJob.typeimg" alt="" height="35px" width="35px">
+                    </div>
+                    <div class=" col-6">
+                        <P>{{cselectedJob.type}}</P>
+                    </div>
+                </div>
+                <div class="extra col-6 d-flex">
+                    <div class=" col-6 text-center">
+                        <img [src]="cselectedJob.locationimg" alt="" height="35px" width="35px">
+                    </div>
+                    <div class=" col-6">
+                        <P>{{cselectedJob.location}}</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-3 d-flex">
+                <div class="extra col-6 d-flex">
+                    <div class=" col-6 text-center">
+                        <img [src]="cselectedJob.experienceimg" alt="" height="35px" width="35px">
+                    </div>
+                    <div class=" col-6">
+                        <P>{{cselectedJob.experience}}</P>
+                    </div>
+                </div>
+                <div class="extra col-6 d-flex">
+                    <div class=" col-6 text-center">
+                        <img [src]="cselectedJob.siteimg" alt="" height="35px" width="35px">
+                    </div>
+                    <div class="col-6">
+                        <P>{{cselectedJob.site}}</P>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 pt-3 d-flex">
+                <div class="extra col-6 d-flex">
+                    <div class="col-6 text-center">
+                        <img [src]="cselectedJob.salaryimg" alt="" height="35px" width="35px">
+                    </div>
+                    <div class="col-6">
+                        <P>{{cselectedJob.salary}}</P>
+                    </div>
+                </div>
+                <div class="col-6 d-flex">
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="tabs col-12 pt-3 d-flex">
+                <div class="tab-company col-4 rounded-pill text-center pt-2">
+                    <p>Company</p>
+                </div>
+                <div class="tab-job col-4 text-center rounded-pill pt-2">
+                    <p>Job Description</p>
+                </div>
+                <div class="tab-res col-4 text-center rounded-pill pt-2">
+                    <p>Responsibilities</p>
+                </div>
+            </div>
+            <div class="col-12 pt-3">
+                <p>{{cselectedJob.description}}</p>
+            </div>
+        </div>
+        <hr>
+        <div class="container p-1">
+            <div class="col-12 d-flex">
+                <div class="col-6 p-2 text-center">
+                    <button class="cbtn btn btn-primary" (click)="msgBox()">Apply Now</button>
+                </div>
+                <div class="col-6 p-2 text-center">
+                    <button class="cmsg btn btn-secondary" (click)="errorBox()">Message</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- important -->
+
+
+
+
+</div>

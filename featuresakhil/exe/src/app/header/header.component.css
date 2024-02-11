@@ -1,0 +1,49 @@
+.brand{
+    background: whitesmoke;
+    border:1px solid #ccc;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+    
+    height: 55px;
+   
+}
+.search{
+    background: whitesmoke;
+    border:1px solid #ccc;
+    color: black;
+    padding: 1%;
+    height: 55px;
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+    
+}
+.icons {
+    
+    display: flex;
+    column-gap: 25px;
+    
+}
+
+.icon {
+    background: #fff;
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 26px;
+    border-radius: 50%;
+    outline: 2px solid #fff;
+    transition-property: outiline-offset, outline-color, background-color;
+    transition-duration: 0.25s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+}
+
+.icon:hover {
+    cursor: pointer;
+    outline-offset: 4px;
+}

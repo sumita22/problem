@@ -1,0 +1,51 @@
+
+    <div class="row">
+      <div class="col">
+        <div class="row" *ngFor="let item of details">
+            <div class="parent col m-1 p-2" (click)="displayJob(item)">
+                <div class="head col-12 d-flex">
+                    <div class="logo col-2">
+                        <img [src]="item.logo" alt="" height="40px" width="40px">
+                    </div>
+                    <div class="col-8">
+                        <p>{{item.jobtitle}}</p>
+                        <small><span>{{item.company}}</span>.{{item.location}}</small>
+                    </div>
+                    <div class="col-2">
+                        <img [src]="item.bookmark" alt="" height="20px" width="20px">
+                    </div>
+                </div>
+                <div class="col-12 pt-3">
+                    <p>{{item.description}}</p>  
+                </div>
+                <div class="sense col-12 d-flex p-1">
+                    <div class="col-3 rounded-pill text-center bg-primary text-white font-weight-bold">
+                        <span>{{item.type}}</span>
+                    </div>
+                    <div class="col-2 rounded-pill text-center bg-primary text-white font-weight-bold">
+                        <span>{{item.location}}</span> 
+                    </div>
+                    <div class="col-2 rounded-pill text-center bg-primary text-white font-weight-bold">
+                        <span>{{item.salary}}</span> 
+                    </div>
+                    <div class="col-3 rounded-pill text-center bg-primary text-white font-weight-bold">
+                        <span>{{item.experience}}</span>  
+                    </div>
+                    <div class="col-2 rounded-pill text-center bg-primary text-white font-weight-bold">
+                        <span>{{item.site}}</span>
+                    </div>
+                </div>
+                
+                   
+            </div>
+        </div>
+      </div>
+      <div class="kid col">
+            <app-child [cselectedJob]="pselectedJob"></app-child>
+      </div>
+    </div>
+  
+
+
+
+

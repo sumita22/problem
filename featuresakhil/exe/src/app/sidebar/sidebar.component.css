@@ -1,0 +1,21 @@
+.pro{
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+.pro img{
+    height: 70px;
+    width: 70px;
+}
+.list a{
+    padding: 2%;
+    line-height: 3;
+    text-decoration: none;
+    color: black;
+}
+.list a:hover{
+    color: #fff;
+}
+.links:hover{
+    background: #f40000;
+}

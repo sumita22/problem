@@ -1,0 +1,18 @@
+.container-fluid{
+    background:paleturquoise;
+    overflow-x: hidden;
+    overflow:scroll(smooth);
+}
+.side{
+    background: whitesmoke;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.22),
+    0px 5px 10px rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.foot{
+    background:palegreen;
+    padding: 1%;
+}

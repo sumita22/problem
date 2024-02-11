@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Akhil">
+    <title>CSS Chapter 1 Exe1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .leftmost {
+            background-color: whitesmoke;
+            border: 0px;
+            width: 50%;
+            float: left;
+            height: 550px;
+        }
+        .rightmost {
+            background-color: rgb(100, 156, 247);
+            border-radius: 10px;
+            border: 0px;
+            width: 50%;
+            float: right;
+            height: 450px;
+            color: white;
+        }
+
+        .job {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        #box {
+            margin-left: 200px;
+            background-color: grey;
+            height: 70px;
+            width: 410px;
+            border-radius: 5px;
+            color: black;
+            text-align: left;  
+        }
+        .fontbox{
+            margin-top: 20px;
+            font-family: sans-serif;
+            vertical-align: middle;
+            font-weight: lighter;
+            color: black;    
+        }
+        #bluebox {
+            width: 100px;
+            height: 15px;
+            background-color: rgb(2, 145, 241);
+            border: 1px ;
+            border-radius: 10px;
+            margin: 20px;
+            padding: 20px;
+            color: white;
+            font-size: 18px;
+            margin-left: 500px ;
+            margin-top: -150px;
+        }
+        #greenbox1{
+            background-color: rgb(8, 173, 2);
+            border: 1px solid rgb(8, 173, 2);
+            border-radius: 5px ;
+            font-weight: lighter;
+            color:#f4f4f4;
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+            margin-left: 120px;    
+        }
+        #greenbox2{
+            background-color: rgb(8, 173, 2);
+            border-radius: 5px;
+            border: 1px solid rgb(8, 173, 2); 
+            font-weight: lighter;
+            color: white;
+            width: 200px;
+            height: 30px;
+            font-size: 18px;
+            margin-left: 90px;     
+        }
+        .bluebox2 {
+            width: 200px;
+            height: 35px;
+            background-color: rgb(2, 145, 241);
+            border: 1px ;
+            border-radius: 5px; 
+            margin: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin: center;
+        }
+        .bluebox3 {
+            width: 200px;
+            height: 35px;
+            background-color: rgb(2, 145, 241);
+            border: 1px ;
+            border-radius: 5px;
+            margin: 20px;
+            padding-right: 20px;
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin: center;
+        }
+        .setup1{
+            width: 90px;
+            height: 25px;
+            background-color: rgb(255, 148, 148);
+            color: rgb(166, 0, 0);
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+    
+        .setup2{
+            width: 90px;
+            height: 25px;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+    
+        .setup3{
+            width: 90px;
+            height: 25px;
+            background-color: burlywood;
+            color: chocolate;
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+    
+        .setup4{
+            width: 90px;
+            height: 25px;
+            background-color: rgb(49, 139, 213);
+            color: rgb(22, 7, 135);
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+    
+        .setup5{
+            width: 90px;
+            height: 25px;
+            background-color: rgb(234, 138, 245);
+            color: rgb(155, 12, 221);
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+    
+        .setup6{
+            width: 90px;
+            height: 25px;
+            background-color: rgb(157, 249, 150);
+            color: green;
+            border-radius: 5px;
+            border: #333;
+            padding-right: 20px;
+            text-align: center;
+            margin: 20px;
+            margin-top: -30px;
+            margin-right: -155px;
+        }
+        #buton{
+            margin-left: 150px;
+            background-color: rgb(159, 162, 162);
+            height: 50px;
+            width: 430px;
+            border-radius: 5px;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #exp{
+            background-color: #007BFF;
+            color: white;
+            border: 1px solid #007BFF;
+            font-size: medium;
+            border-radius: 5px;
+            width: 100px;
+            height: 38px;
+            vertical-align: middle;
+            margin-top: 5px;
+            margin-left: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="leftmost"><!--top left side section-->
+        <h4 align="center">HireMe Now!!!</h4>
+        <h1 align="center">The Best Place<br>To Find Your<br>Dream Company</h1><br><br>
+        <p align="center">Ideal platform for job seekers passionate about<br>start ups and seeking new career opportunities.</p>
+        <br>
+        <p id="buton">Job title or Company<input type="button" id="exp" value="Explore"></p>
+        <br>
+    <div class="greenbox2">
+        <input type="button" id="greenbox1" value="Land your dream job"><input type="button" id="greenbox2" value="Recruit the perfect fit">
+       
+    </div>
+    </div>
+    
+    <div class="rightmost"><!--top right section-->
+        <div class="">
+            <table border="0px" bgcolor="" width="100%" height="450">
+                <tr>
+                    <td>Home</td>
+                    <td>Post a Job</td>
+                    <td>About</td>
+                    <td colspan="2">Feature</td>
+                    
+                    <td align="right">Login |</td>
+                    <td>
+                        <button type="submit">Sign in</button>
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td align="center" rowspan="5" height="75%" colspan="9" ><img src="meeting.jpg" height="300" width="400"></td>
+                </tr>
+
+            </table><br><br>
+        </div><br><br>
+    </div><br><br><!--first section finished-->
+    <!--section starts from here, it is done as a single section using table format-->
+    <table align="center" cellspacing="30" border="0px" width="75%" height="500">
+            <tr colspan="">
+                <td align="center" rowspan="2" colspan="4"><font face="math" size="6"><b>Explore By Category</b></font><br>open the doors to endless career possibilities<br>and find your dream job with ease</td>
+            </tr>
+            <tr>
+                
+            </tr>
+            <tr>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="computer.png" height="50" width="50"><br><font size="2">Development</font><br><font size="1">512 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="suitcase.png" height="50" width="50"><br><font size="2">Development</font><br><font size="1">223 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="growth.png" height="50" width="50"><br><font size="2">Development</font><br><font size="1">125 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="pen.png" height="50" width="50"><br><font size="2">Development</font><br><font size="1">400 jobs available</font>
+                </td>
+            </tr>
+            <tr>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="bank.png" height="50" width="50"><br><font size="2">Finance</font><br><font size="1">49 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="staffing.png" height="50" width="50"><br><font size="2">Human Resource</font><br><font size="1">116 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="center" bgcolor="#DCDCDC">
+                    <img src="document-editor.png" height="50" width="50"><br><font size="2">Content Writing</font><br><font size="1">323 jobs available</font>
+                </td>
+                <td style="border-radius: 10px;" align="left" bgcolor="#3399FF">
+                    <font valign="" size="2" color="white">&nbsp;&nbsp;&nbsp;Explore<br>&nbsp;&nbsp;&nbsp;more 32+<br>&nbsp;&nbsp;&nbsp;companies<br>&nbsp;&nbsp;</font><img align="left" src="turn (1).png" height="50" width="70">
+                </td>
+            </tr>
+            
+    </table>
+    <br><br><!--2nd section ends here-->
+    <!--3rd section starts here, this section is also done using table structure-->
+    <table align="center" cellspacing="15" border="00px" width="75%" height="300">
+        <tr>
+            <td rowspan="5" height="100%" width="50%">
+                <img src="team.webp" height="600" width="450">
+            </td>
+            
+            <td height="30px" colspan="2">
+                <h1>Help You Find A Job<br>That Suits You</h1>
+            </td>
+        </tr>
+        <tr>
+            <td height="20px" align="center">
+                <img valign="bottom" src="office-building.png" height="50" width="50">
+            </td>
+            <td>
+                <p align="left"><font align="justify-content"><b>Trusted and Accurate</b><br>Trust us to help you find your perfect job with<br>our accounts job strong and reliable job portal.</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td height="20px" align="center">
+                <img src="briefcase.png" height="50" width="50">
+            </td>
+            <td>
+                <p align="left"><font align="justify-content"><b>Hired By Top Companies</b><br>Get one step closer to your career goals and<br>be employed by the best.</font></p>
+            </td>
+        </tr>
+        <tr>
+            <td height="20px" align="center">
+                <img src="check.png" height="50" width="50">
+            </td>
+            <td>
+                <p align="left"><b>Various Categories</b><br>Discove exciting career opportunities across a<br>wide range of industries.</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+    </table><!--3rd section ends here-->
+    <!--4th section starts here, using table to structure the whole thing and inline css are used to style my table contents-->
+    <br><br><br>
+    <table align="center" cellpadding="15px" cellspacing="15" border="0px" width="75%" height="500">
+        <tr colspan="">
+            <td align="center" rowspan="2" colspan="4"><font face="math" size="6"><b>Recently Popular Jobs</b></font><br>Pand parippvadak 1 roopa STD call nu 1 roopa....<br>ipo STD call nu 1 roopa parippvadak 10 roopa....<br>Shaasthram thottu,parippvada jayichu</td>
+        </tr>
+        <tr>
+            
+        </tr>
+        <tr>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="nike.png" height="50" width="50"><font size="2">Nike</font><br><br><font face="math" size="3"><b>Custom Designer</b></font>
+                <button class="setup1">Designer</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">New York   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr>
+                <br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="microsoft.png" height="50" width="50"><font size="2">Microsoft</font><br><br><font face="math" size="3"><b>Network Engineer</b></font>
+                <button class="setup2">Engineer</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">Hamburg   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr><br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="social.png" height="50" width="50"><font size="2">Amazon</font><br><br><font face="math" size="3"><b>Virtual Assistant</b></font>
+                <button class="setup3">Virtual</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">Seol   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr><br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+        </tr>
+        <tr>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="ebay.png" height="50" width="50"><font size="2">Ebay</font><br><br><font face="math" size="3"><b>Regional FBO</b></font>
+                <button class="setup4">FBO</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">New Delhi   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr><br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="slack.png" height="50" width="50"><font size="2">Slack</font><br><br><font face="math" size="3"><b>UX Designer</b></font>
+                <button class="setup5">Development</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">Bangkok   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr><br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+            <td style="border-radius: 10px; background-color: #e3e3e3 ; align-self: start; ">
+                <img src="search.png" height="50" width="50"><font size="2">Google</font><br><br><font face="math" size="3"><b>Front End Developer</b></font>
+                <button class="setup6">Developer</button>
+                <br><pre><img src="placeholder.png" height="10" width="10">London   <img src="clock.png" height="10" width="10">Full time</pre>
+                <hr><br><font size="1">Pand parippvadak 1 roopa STD call nu 1<br>ipo STD call nu 1 roopa parippvadak 10</font>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <p align="center"><button class="bluebox2" type="button"><font size="">View All Jobs</font></button></p>
+            </td>
+        </tr>
+        
+</table><!--4th section ends here-->
+<!--5th section starts here, using html table the structure of the section has been done, and css is used to style the whole section-->
+<table align="center" cellspacing="15" border="0px" width="75%" height="350">
+    <tr>
+        <td align="center" width="50%" rowspan="2">
+            <h1>Get Hired By Company<br>Around The World</h1><br>Discover global career opportunities and land<br>your dream job anywhere in the world with<br>our extensive job listings of top companies.
+            <br><br>
+            <button class="bluebox3">Apply a Job</button>   Learn More
+        </td>
+        <td rowspan="" height="" width="25%">
+            <img src="team 1.jpg" height="250px" width="300px">
+        </td>
+        <td rowspan="" height="75px" width="25%">
+            <img src="team 2.jpg" height="250px" width="300px">
+        </td>
+    </tr>
+    <tr>
+        <td rowspan="2" height="35px" width="25%">
+            <img src="team 3.jpg" height="250px" width="300px">
+        </td>
+        <td width="25%" height="75px">
+            <img src="team 4.jpg" height="250px" width="300px">
+        </td>
+    </tr>
+    
+</table>
+</body>
+</html>

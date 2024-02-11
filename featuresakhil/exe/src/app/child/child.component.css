@@ -1,0 +1,55 @@
+.backdrop img{
+    width: 550px;
+    height: 150px;
+}
+.logo{
+    position: absolute;
+    margin-top: -40px;
+    margin-left:250px;
+}
+.logo img{
+    border-radius: 50%;
+}
+.bookmark button{
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+hr{
+    height: 5px;
+
+}
+.tab-company:hover{
+    cursor: pointer;
+    background: azure;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+.tab-res:hover{
+    cursor: pointer;
+    background: azure;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+.tab-job:hover{
+    cursor: pointer;
+    background: azure;
+    border-top: 2px solid aqua;
+    border-bottom: 2px solid aqua;
+}
+.cbtn{
+    width: 100% !important;
+}
+.cbtn:hover{
+background: #f40000;
+color: #fff;
+border: 1px solid #f40000;
+}
+.cmsg{
+    width: 100% !important;
+}
+.cmsg:hover{
+    background: #45e348;
+    color: #fff;
+    border: 1px solid #45e348;
+}
