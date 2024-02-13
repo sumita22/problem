@@ -1,0 +1,21 @@
+<div>
+    <app-filter [all]="getAllBooks()" [free]="getFreeBooks()" [premium]="getPremiumBooks()"
+    (typeSelected)="OntypeSelected($event)" >
+
+
+    </app-filter>
+</div>
+<div class="row">
+    <h3 class="text-center mt-4">Books Available</h3>
+    <div class="col-4 flex-column text-center" *ngFor="let temp of filteredDetails">
+        <div class="cards">
+            <img [src]="temp.image" [alt]="temp.alt">
+            <h3>{{temp.id}}</h3>
+            <h1>{{temp.name}}</h1>
+            <h3 class="text-muted">{{temp.author}}</h3>
+            <button type="button" class="btn btn-info">Show
+            </button>
+        </div>
+        
+    </div>
+</div>
