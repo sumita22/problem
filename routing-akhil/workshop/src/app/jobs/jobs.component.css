@@ -1,0 +1,26 @@
+.job {
+    padding: 3%;
+    width: 42%;
+    position: absolute;
+    top: 31%;
+    left: 21%;
+    background-color: #f7f9fa;
+    flex-wrap: wrap;
+    height: 87%;
+overflow-y: scroll;
+}
+.button_row
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+}
+.button{
+    border-radius: 25px;
+    padding:10px;
+    background-color: #CAC3AA; 
+}
+.card
+{
+    padding-bottom: 5%;
+}

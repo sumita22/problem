@@ -1,0 +1,16 @@
+<div class="job">
+    <div class="heading-info">
+      <h5>Showing 106 Applicants</h5>
+      
+    </div>
+    <div class="card"  *ngFor="let list of jobs">
+        <img [src]="list.companyLogo" style="float: left; padding-bottom: 6px;">
+        <div class="company">
+            <h4>{{list.job_post}}<br><small style="color: dodgerblue;">{{list.company_name}} </small><small>&#8226;{{list.location}}</small></h4>
+        </div>
+        
+        <p style="font-size: 1.2em;">We are looking for a UI/UX Designer to turn our software into easy-to- use products for our
+            clients.</p>
+           
+    </div>
+    </div>

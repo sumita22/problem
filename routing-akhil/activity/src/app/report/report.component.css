@@ -1,0 +1,12 @@
+.report{
+    text-align: center;
+    margin: 3%;
+    padding: 2%;
+    border-radius: 30px;
+    border:1px solid #ccc;
+
+}
+h1{
+    font-weight: 800;
+    color: black;
+}

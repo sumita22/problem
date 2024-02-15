@@ -1,0 +1,14 @@
+.about{ background: lightpink;
+    margin: 1%;
+    border-radius: 30px;
+    border: solid #ccc 1px; 
+}
+h1{ 
+    text-align: center;
+    padding: 1%;
+    font-weight: 900;
+   color: #777;
+}
+h5{ 
+    text-align: center;
+}

@@ -1,0 +1,15 @@
+.home{
+    background: lightskyblue;
+    border-radius: 30px;
+    border: solid #ccc 1px;
+    text-align: center;
+    margin: 3%;
+    padding:1%;
+}
+h1{
+    font-weight: 500;
+    color: #777;
+}
+h5{
+    text-align: center;
+}

@@ -1,0 +1,28 @@
+#searchBar {
+    width: 600px !important;
+  }
+  .con img{
+  height: 100px;
+  width: 110px;
+  border-radius: 50%;
+  }
+  .con{
+    margin: 1%;
+    padding: 2%;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(196,196,196,0.15);
+    box-shadow: 0 25px 25px rgba(0,0,0,0.3);
+    backdrop-filter: blur(30px);
+    gap: 3em;
+    grid-template-columns: repeat(3,1fr);
+  }
+  #innerCol{
+    background: linear-gradient(to right,#fff ,#ccc );
+  }
+  span{
+    color: rgb(20, 163, 220);
+  }

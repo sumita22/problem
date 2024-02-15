@@ -1,0 +1,43 @@
+.sidebar{
+    margin: 3%;
+    border-radius: 30px;
+    border: solid #ccc 1px;
+    align-items: center;
+    justify-content: center;
+
+}
+.pro-pic img{
+    align-items: center;
+    justify-content: center;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    box-shadow: 2px 4px 8px rgba(0,0,0,.5);
+}
+p{
+    line-height: 0.5;
+}
+
+.links{
+   
+    border: solid #ccc 1px;
+    font-size: x-large;
+    line-height: 2;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+
+}
+.active{
+    color: blueviolet;
+    font-weight: bold;
+    border-left: 2px solid blueviolet;
+    border-right: 2px solid blueviolet;
+}
