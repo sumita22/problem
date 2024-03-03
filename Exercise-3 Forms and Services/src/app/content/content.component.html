@@ -1,0 +1,99 @@
+<div class="content col-12 mt-3 d-flex">
+    <div class="col-4">
+        <div class="pro pt-2 pb-2 text-center col-12" *ngFor="let details of profile">
+            <div class="pro-img">
+                <img src="../../assets/images/pic2.jpg" alt="" />
+            </div>
+            <h4>{{details.name}}</h4>
+            <p>{{details.job_title}}</p>
+            <div>
+                <i class="bi bi-file-earmark-person-fill text-primary"></i><a href="#"> Resume</a>
+            </div>
+            <div class="text-left">
+                <i class="bi bi-envelope-at-fill text-primary"></i><a href="#"> {{details.email}}</a>
+            </div>
+            <div class="text-left">
+                <i class="bi bi-telephone-fill text-primary"></i><a href="#"> {{details.phone}}</a>
+            </div>
+            <div class="text-left">
+                <i class="bi bi-geo-alt-fill text-primary"></i><a href="#"> {{details.location}}</a>
+            </div>
+            <hr>
+            <div class="text-right">
+                <button type="edit" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+    </div>               
+            
+        
+        <div class="about mt-3 pb-2 col-12">
+        
+            <div class="abt-head">
+                <h2><b>About Me</b></h2>
+            </div>
+            <div class="abt-body">
+                is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s,
+            </div>
+            <hr>
+            <div class="text-right">
+                <button type="edit" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="skills pt-2 pb-2 col-12">
+            <div class="skills-head">
+                <h2><i class="bi bi-lightbulb-fill text-primary"></i> Skills</h2>
+            </div>
+            <ul>
+                <li>UX Research Skill</li>
+                <li>Wireframing and prototyping skill</li>
+                <li>UX wrting Skill</li>
+                <li>Interaction design Skill</li>
+                <li>Prototype Design Skill</li>
+                <li>Coding Skill</li>
+                <li>Information Architecture Skill</li>
+            </ul>
+            <hr>
+            <div class="text-right">
+                <button type="edit" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+        </div>
+        <div class="education mt-3 pt-2 pb-2 col-12">
+            <div class="edu-head">
+              <h2><i class="bi bi-mortarboard-fill text-primary"></i> Education</h2>  
+            </div>
+            <div class="col-12 d-flex">
+                <div class="col-6">Bachelor of Arts - Design</div>
+                <div class="col-6 text-right">Nov '13 - Dec '17</div>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="col-6">Field & Fort University</div>
+                <div class="col-6 text-right">Kozhikode, Kerala</div>
+            </div>
+            <div class="col-12 d-flex">
+                <div class="col-6">Master of Arts - Graphic Design</div>
+                <div class="col-6 text-right">University of Calicut</div>
+            </div>
+            <hr>
+            <div class="text-right">
+                <button type="edit" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+        </div>
+        <div class="experience pt-2 pb-2 col-12 mt-3">
+            <div class="exp-head">
+                <h2><i class="bi bi-suitcase-lg text-primary"></i> Experience</h2>  
+              </div>
+              <ul>
+                <li>Advertising Age - Graphic Design Intern</li>
+                <p>Jan '21 - Nov '22</p>
+                <li>Advertising Speciality Institute, San Francisco, TX - Graphic Designer</li>
+                <p>Dec '18 - June '20</p>
+              </ul>
+              <hr>
+              <div class="text-right">
+                <button type="edit" class="btn btn-outline-primary"><i class="bi bi-pencil-fill"></i></button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+
+
+
+
+
+.pro{
+    border: 1px solid #ccc;
+    
+    box-shadow: 10px 10px 10px rgba(0,0,0,.22),
+    8px 8px 8px rgba(0,0,0,.24);
+    line-height: 2.5;  
+    height:390px;
+}
+.pro a{
+    color: black;
+
+}
+.pro-img img{
+    height: 80px;
+    width: 80px;
+}
+
+.about{
+    border: 1px solid #ccc;
+   height:390px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.22),
+    8px 8px 8px rgba(0,0,0,.24);
+    line-height: 2.5;  
+}
+.skills{
+    border: 1px solid #ccc;
+    
+    box-shadow: 10px 10px 10px rgba(0,0,0,.22),
+    8px 8px 8px rgba(0,0,0,.24); 
+}
+.education{
+    border: 1px solid #ccc;
+    
+    box-shadow: 10px 10px 10px rgba(0,0,0,.22),
+    8px 8px 8px rgba(0,0,0,.24);  
+}
+.experience{
+    border: 1px solid #ccc;
+    box-shadow: 10px 10px 10px rgba(0,0,0,.22),
+    8px 8px 8px rgba(0,0,0,.24); 
+}

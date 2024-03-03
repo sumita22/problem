@@ -1,0 +1,52 @@
+<div class="setup col-12 mt-5">
+    <h2>Settings</h2>
+    <hr>
+    
+    <!-- form -->
+    <form [formGroup]="register" id="updateForm" (ngSubmit)="saveChanges()">
+        <!-- Name -->
+        <div class="form-group">
+            <label style="color: rgb(51, 50, 50); font-size: large;">Full Name</label> <br>
+            <input class="form-control" placeholder="Eg. Alexander"  type="text" name="fullname" id="fname" formControlName="name" pattern="[a-zA-z]+$" required>
+            <br>
+            <span style="color: red; font-weight: bold;"
+                *ngIf="register.controls['name'].invalid && register.controls['name'].touched && register.controls.name.errors?.['required']">Name Required!!</span>
+        </div>
+        
+        <!-- Location -->
+        <div class="form-group">
+            <label style="color: rgb(51, 50, 50); font-size: large;">Location</label> <br>
+            <input class="form-control "type="text" placeholder="Eg. Chennai" name="location"  formControlName="location" id="loc" required>
+            <br>
+            <span style="color: red; font-weight: bold;"
+                *ngIf="register.controls['location'].invalid && register.controls['location'].touched && register.controls.location.errors?.['required']">Location Required!!</span>
+        </div>
+        
+        <!-- Email -->
+        <div class="form-group">
+            <label style="color: rgb(51, 50, 50);font-size: large;">Email</label> <br>
+            <input class="form-control" placeholder="name@gmail.com" type="email" name="email" formControlName="email" id="mail" required>
+            <br>
+            <span style="color: red; font-weight: bold;"
+                *ngIf="register.controls['email'].invalid && register.controls['email'].touched && register.controls.email.errors?.['required']">Email required!!</span>
+            <span style="color: red; font-weight: bold;"
+                *ngIf="register.controls['email'].invalid && register.controls['email'].touched && register.controls.email.errors?.['email']">Invalid Email</span>
+        </div>
+        
+        <!-- Phone number -->
+        <div class="form-group">
+            <label style="color: rgb(51, 50, 50);font-size: large;">Phone Number</label> <br>
+            <input  class="form-control" placeholder="Eg. 7899019989" type="number" name="number" formControlName="phone" id="phone" required>
+            <br>
+            <span style="color: red; font-weight: bold;"
+                *ngIf="register.controls['phone'].invalid && register.controls['phone'].touched && register.controls.phone.errors?.['required']">Phone number
+                required</span>
+        </div>
+        
+        <!-- update profile button -->
+        <div class="col-4 text-left mt-3">
+            <button [disabled]="register.invalid" type="submit" class="btn btn-primary mt-3">Update
+                Profile</button>
+        </div>
+    </form>
+</div>
